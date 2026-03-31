@@ -1,8 +1,8 @@
 ## TURISMO & PLANNING 🏨📝
 
-Este es mi Trabajo de Fin de Grado (TFG) del CFGS de Desarrollo de Aplicaciones Multiplataforma (DAM), un proyecto integral que integra funcionalidades de turismo con la planificación personal para optimizar la organización diaria.  
+Este es mi Trabajo de Fin de Grado (TFG) del CFGS de Desarrollo de Aplicaciones Multiplataforma (DAM), que tiene el objetivo de simplificar los pasos necesarios para el uso de las funcionalidades destacadas aquí abajo de una forma mucho más sencilla y rápida.
 
-Esta aplicación es ideal para turistas y residentes de la provincia de Guadalajara (Castilla-La Mancha, España), permite organizar el día a día con gran detalle. Se ha seguido la metodología de desarrollo **_RUP_** a la hora de trabajar en todo el proyecto.  
+Esta aplicación es ideal para turistas y residentes de la provincia de Guadalajara (Castilla-La Mancha, España), Se ha seguido la metodología de desarrollo **_RUP_** a la hora de trabajar en todo el proyecto.  
 
 ![Icono oficial app](https://github.com/user-attachments/assets/60a4ddd1-84e4-4c03-bf8c-2303d1b4754f)
 
