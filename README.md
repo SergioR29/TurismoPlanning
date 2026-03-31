@@ -10,6 +10,7 @@ Funcionalidades destacadas:
 
 - **Exportación de Documentos**: Generación de archivos en formatos HTML o PDF (para informes o planes).
 - **Visualización Geoespacial e Información Climática**: Integración de mapas con ubicación (actual o de una ciudad seleccionada) y datos climáticos en tiempo real.
+- **Consulta de información turística**: Consultar información de sitios que están alrededor de la provincia de Guadalajara (España) de una forma mucho más sencilla y rápida.
 - **Planificación Personalizada**: Organización de visitas a ciudades/sitios y eventos personales, con agrupación por categorías definidas por el usuario.
 - **Calendario Interactivo**: Vista de eventos agrupados por el día seleccionado del mes.
 - **Temas Personalizables**: Opciones de visualización (Claro, Oscuro o Predeterminado por el Sistema) para una experiencia de usuario cómoda. Sólo disponible en la versión móvil.
