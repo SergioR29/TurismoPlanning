@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>categorias</class>
+ <widget class="QWidget" name="categorias">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>434</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>434</width>
+    <height>505</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Categorías</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../recursos/iconos/categorias.png</normaloff>../recursos/iconos/categorias.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(26, 26, 26);</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="categoriaLabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Categoría</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="categoriaComboBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+background-color: rgb(40, 40, 40);
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom: 2px solid blue;
+padding-left:5px;</string>
+      </property>
+      <property name="maxVisibleItems">
+       <number>999999999</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+      <property name="duplicatesEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolButton" name="editarCategoria">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>15</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(26, 26, 26);border:none;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_editar.png</normaloff>../recursos/iconos/ic_editar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="eliminarCategoria">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>17</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(26, 26, 26);border:none;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_eliminar.png</normaloff>../recursos/iconos/ic_eliminar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>26</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>431</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>CATEGORÍAS ORDENADAS
+POR PRIORIDAD</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="exportar">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>400</y>
+     <width>256</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTreeWidget::item {
+    padding: 5px;
+}</string>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+   </property>
+   <property name="itemsExpandable">
+    <bool>true</bool>
+   </property>
+   <property name="expandsOnDoubleClick">
+    <bool>true</bool>
+   </property>
+   <attribute name="headerVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="headerCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="headerHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="headerShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="headerStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Exportar a</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>170</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <brush brushstyle="SolidPattern">
+      <color alpha="255">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </brush>
+    </property>
+   </column>
+  </widget>
+  <widget class="QToolButton" name="ayuda">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>460</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(26, 26, 26);border:none;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ayuda.png</normaloff>../recursos/iconos/ayuda.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>139</y>
+     <width>401</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollArea {
+	color: rgb(255, 255, 255);
+	border:2px solid blue;
+}
+
+/* Estilo general para la barra de scroll vertical DENTRO de un QScrollArea */
+            QScrollArea QScrollBar:vertical {
+                border: none; /* Sin borde */
+                background: #2a2a2a; /* Color de fondo del riel (gris muy oscuro) */
+                width: 12px; /* Ancho de la barra vertical */
+                /* margin: 0px 0 0px 0; /* Sin margen si no hay botones de flecha visibles */
+            }
+
+             /* Estilo para el &quot;handle&quot; (la parte que arrastras) de la barra vertical */
+            QScrollArea QScrollBar::handle:vertical {
+                background: #606060; /* Color del handle (gris medio) */
+                min-height: 20px; /* Altura mínima del handle */
+                border-radius: 6px; /* Esquinas redondeadas para el handle */
+                border: none; /* Sin borde en el handle */
+            }
+
+            /* Estilo al pasar el ratón por el handle */
+            QScrollArea QScrollBar::handle:vertical:hover {
+                background: #828282; /* Color del handle al pasar el ratón (gris más claro) */
+            }
+
+            /* Estilo cuando se pulsa el handle */
+            QScrollArea QScrollBar::handle:vertical:pressed {
+                background: #939393; /* Color del handle al pulsar (gris aún más claro) */
+            }
+
+            /* Estilo para las áreas &quot;page&quot; (el riel entre el handle y las flechas) */
+            /* Normalmente no necesitan un color de fondo propio si QScrollBar:vertical ya lo tiene */
+            QScrollArea QScrollBar::add-page:vertical, QScrollArea QScrollBar::sub-page:vertical {
+                background: none;
+            }
+
+            /* Estilo para los botones de flecha (si están visibles) */
+            /* Si no quieres botones de flecha, puedes ocultarlos o no definirlos */
+            QScrollArea QScrollBar::add-line:vertical, QScrollArea QScrollBar::sub-line:vertical {
+                border: none;
+                background: #3a3a3a; /* Color de fondo de los botones (gris oscuro) */
+                height: 0px; /* Ocultar botones de flecha estableciendo altura a 0 */
+                subcontrol-position: top; /* Posición de sub-line (irrelevante si height es 0) */
+                subcontrol-origin: margin;
+            }
+             QScrollArea QScrollBar::sub-line:vertical { subcontrol-position: top; }
+             QScrollArea QScrollBar::add-line:vertical { subcontrol-position: bottom; }
+
+
+            /* Estilo para las flechas DENTRO de los botones (irrelevante si los botones están ocultos) */
+             QScrollArea QScrollBar::up-arrow:vertical, QScrollArea QScrollBar::down-arrow:vertical {
+                 width: 0px; /* Ocultar flechas estableciendo ancho/alto a 0 */
+                 height: 0px;
+                 background: none;
+             }
+
+            /* Puedes añadir estilos similares para QScrollBar:horizontal */
+            
+            QScrollArea QScrollBar:horizontal {
+                border: none;
+                background: #2a2a2a;
+                height: 12px;
+            }
+            QScrollArea QScrollBar::handle:horizontal {
+                background: #606060;
+                min-width: 20px;
+                border-radius: 6px;
+                border: none;
+            }
+            QScrollArea QScrollBar::handle:horizontal:hover { background: #828282; }
+            QScrollArea QScrollBar::handle:horizontal:pressed { background: #939393; }
+            QScrollArea QScrollBar::add-page:horizontal, QScrollArea QScrollBar::sub-page:horizontal { background: none; }
+            QScrollArea QScrollBar::add-line:horizontal, QScrollArea QScrollBar::sub-line:horizontal { border: none; background: #3a3a3a; width: 0px; }
+            QScrollArea QScrollBar::left-arrow:horizontal, QScrollArea QScrollBar::right-arrow:horizontal { width: 0px; height: 0px; background: none; }
+            </string>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>397</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <property name="bottomMargin">
+      <number>9</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home"/>
+        <item
+            android:id="@+id/nav_sitios"
+            android:icon="@drawable/ic_menu_location"
+            android:title="@string/menu_sitios" />
+        <item
+            android:id="@+id/nav_actualidad"
+            android:icon="@drawable/ic_menu_actualidad"
+            android:title="Actualidad" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/ic_menu_calendar"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/nav_notas"
+            android:icon="@drawable/ic_menu_notas"
+            android:title="Notas" />
+        <item
+            android:id="@+id/nav_planificar"
+            android:icon="@drawable/ic_menu_planificar"
+            android:title="Planificar" />
+        <item
+            android:id="@+id/nav_categorias"
+            android:icon="@drawable/ic_menu_categorias"
+            android:title="Categorías"/>
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/ic_menu_eventos"
+            android:title="Eventos" />
+    </group>
+</menu>

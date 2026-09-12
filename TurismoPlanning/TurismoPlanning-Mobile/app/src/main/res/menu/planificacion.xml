@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_guardar"
+        android:title="@string/guardar"
+        android:icon="@drawable/ic_guardar"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_exportar"
+        android:title="@string/exportar"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_exportar_html"
+                android:title="@string/exportar_html"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_exportar_pdf"
+                android:title="@string/exportar_pdf"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_ayudaT"
+        android:title="Ayuda"
+        android:icon="@drawable/ic_ayuda"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

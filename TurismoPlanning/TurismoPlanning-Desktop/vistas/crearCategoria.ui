@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>crearCategoria</class>
+ <widget class="QWidget" name="crearCategoria">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>183</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>399</width>
+    <height>183</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Crear categoría</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../recursos/iconos/categorias.png</normaloff>../recursos/iconos/categorias.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(21, 21, 21);</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>20</y>
+     <width>361</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="verticalSpacing">
+     <number>12</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="nombreLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="nombreLineEdit">
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+background-color: rgb(30, 30, 30);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid blue;
+
+padding-left:5px;
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="prioridadLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Prioridad</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="prioridadSpinBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+background-color: rgb(30, 30, 30);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid blue;</string>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+      </property>
+      <property name="accelerated">
+       <bool>false</bool>
+      </property>
+      <property name="showGroupSeparator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>999999999</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="cerrar">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>145</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(0, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string> Cerrar</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/cerrar.png</normaloff>../recursos/iconos/cerrar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="guardarCategoria">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>145</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(0, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string>  Guardar</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_guardar.png</normaloff>../recursos/iconos/ic_guardar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="color">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>92</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(21, 21, 21);border:none;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_selectorColor.png</normaloff>../recursos/iconos/ic_selectorColor.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>26</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>92</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cerrar</sender>
+   <signal>clicked()</signal>
+   <receiver>crearCategoria</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

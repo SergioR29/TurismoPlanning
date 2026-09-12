@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Turismo &amp; Planning</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">TURISMO — PLANNING</string>
+    <string name="nav_header_subtitle">Versión móvil</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_sitios">Sitios</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="guardar">Guardar</string>
+    <string name="abrir_nota">Abrir nota...</string>
+    <string name="escribe_aqu">Escribe aquí...</string>
+    <string name="ubicaci_n">UBICACIÓN Y CLIMA</string>
+    <string name="clima">CLIMA</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="sitio">Sitio</string>
+    <string name="descripci_n">DESCRIPCIÓN</string>
+    <string name="exportar">Exportar</string>
+    <string name="exportar_html">HTML</string>
+    <string name="exportar_pdf">PDF</string>
+    <string name="descartar">Descartar</string>
+    <string name="categor_a">Categoría</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="ubicaci_n_y_clima">Ubicación y Clima</string>
+    <string name="planificar_visita">Planificar visita</string>
+</resources>

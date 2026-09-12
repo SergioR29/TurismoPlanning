@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_exportar"
+        android:title="@string/exportar"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_exportar_html"
+                android:title="@string/exportar_html"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_exportar_pdf"
+                android:title="@string/exportar_pdf"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/ubiClimaSitio"
+        android:title="@string/ubicaci_n_y_clima"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/planificarVisita"
+        android:title="@string/planificar_visita"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tfg.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_sitios"
+        android:name="com.tfg.myapplication.ui.sitios.SitiosFragment"
+        android:label="Sitios"
+        tools:layout="@layout/fragment_sitios"/>
+
+    <fragment
+        android:id="@+id/nav_actualidad"
+        android:name="com.tfg.myapplication.ui.actualidad.ActualidadFragment"
+        android:label="Actualidad"
+        tools:layout="@layout/fragment_actualidad">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_calendario"
+        android:name="com.tfg.myapplication.ui.calendario.CalendarioFragment"
+        android:label="Calendario"
+        tools:layout="@layout/fragment_calendario"/>
+
+    <fragment
+        android:id="@+id/nav_notas"
+        android:name="com.tfg.myapplication.ui.notas.NotasFragment"
+        android:label="Notas"
+        tools:layout="@layout/fragment_notas"/>
+
+    <fragment
+        android:id="@+id/nav_planificar"
+        android:name="com.tfg.myapplication.ui.planificacion.PlanificarFragment"
+        android:label="Planificar"
+        tools:layout="@layout/fragment_planificar"/>
+
+    <fragment
+        android:id="@+id/nav_categorias"
+        android:name="com.tfg.myapplication.ui.categorias.CategoriasFragment"
+        android:label="Categorías"
+        tools:layout="@layout/fragment_categorias"/>
+
+    <fragment
+        android:id="@+id/nav_eventos"
+        android:name="com.tfg.myapplication.ui.eventos.EventosFragment"
+        android:label="Eventos"
+        tools:layout="@layout/fragment_eventos"/>
+</navigation>

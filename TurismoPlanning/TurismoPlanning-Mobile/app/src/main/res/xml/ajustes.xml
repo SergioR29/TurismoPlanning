@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <string-array name="ajustes">
+      <item>Modo Claro</item>
+      <item>Modo Oscuro</item>
+      <item>Predeterminado por el Sistema</item>
+  </string-array>
+    <string-array name="claves">
+        <item>Claro</item>
+        <item>Oscuro</item>
+        <item>Predeterminado</item>
+    </string-array>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sitios.SitiosFragment"
+    android:background="?attr/colorOnPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/ciudad"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/ListaCiudades"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/borde_spinner"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114">
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/sitio"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/ListaSitios"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/borde_spinner" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_Ciudad"
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/img_Sitio"
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ciudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/ciudad"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sitio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sitio"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </ScrollView>
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="290dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/desc_ciudadYsitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/borde_textview"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

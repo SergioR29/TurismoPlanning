@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    tools:context="com.tfg.myapplication.ui.planificacion.PlanificarFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/icEvento"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_icono" />
+
+        <EditText
+            android:id="@+id/tituloEvento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/estilo_edittext"
+            android:hint="@string/escribe_aqu"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/formulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Fecha de Inicio"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextDate_FI"
+            android:layout_width="202dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/estilo_edittext"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Fecha de Finalización"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextDate_FF"
+            android:layout_width="202dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/estilo_edittext"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:longClickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Hora de Inicio"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextDate_HI"
+            android:layout_width="202dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/estilo_edittext"
+            android:ems="10"
+            android:inputType="time"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="Hora de Finalización"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextDate_HF"
+            android:layout_width="202dp"
+            android:layout_height="34dp"
+            android:background="@drawable/estilo_edittext"
+            android:ems="10"
+            android:inputType="time"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:longClickable="false"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formulario"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/categor_a"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/ListaCategorias"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/borde_spinner"/>
+
+            <ImageButton
+                android:id="@+id/imageButton_CrearCategoria"
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Prioridad"
+            android:textSize="17sp"
+            android:textColor="?attr/colorOnSurface"/>
+
+        <EditText
+            android:id="@+id/prioridadCategoria_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:textSize="17sp"
+            android:textColor="?attr/colorOnSurface"
+            android:background="@drawable/estilo_edittext"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:text="@string/descripci_n"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/descTarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/borde_textview"
+                android:hint="@string/escribe_aqu"
+                android:textColorHint="@color/graySec"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

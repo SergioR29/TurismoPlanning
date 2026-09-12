@@ -1,0 +1,31 @@
+<resources>
+    <style name="CalendarDateTextBlack">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarMonthTextBlack">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarWeekDayTextBlack">
+        <item name="android:textColor">?attr/colorOnTertiary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">Title</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="elementosGenerales" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorControlNormal">?attr/colorOnSurface</item>
+    </style>
+
+
+</resources>

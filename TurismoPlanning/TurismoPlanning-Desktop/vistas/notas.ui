@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>notas</class>
+ <widget class="QMainWindow" name="notas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>799</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Notas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../recursos/iconos/notas.png</normaloff>../recursos/iconos/notas.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 27, 27);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="texto">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;border-radius:0px;
+background-color: rgb(53, 53, 53);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(34, 34, 34);
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:2px solid blue;</string>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <widget class="QMenu" name="menuExportar">
+     <property name="title">
+      <string>Exportar</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../recursos/iconos/flecha_arriba.png</normaloff>../recursos/iconos/flecha_arriba.png</iconset>
+     </property>
+     <addaction name="actionHTML"/>
+     <addaction name="actionPDF"/>
+    </widget>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="menuExportar"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAjustes">
+    <property name="title">
+     <string>Ajustes</string>
+    </property>
+    <addaction name="actionFormato_de_texto"/>
+    <addaction name="actionAyuda"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAjustes"/>
+  </widget>
+  <action name="actionFormato_de_texto">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/formato_texto.png</normaloff>../recursos/iconos/formato_texto.png</iconset>
+   </property>
+   <property name="text">
+    <string>Formato de texto</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_guardar.png</normaloff>../recursos/iconos/ic_guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ic_guardar.png</normaloff>../recursos/iconos/ic_guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionHTML">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/html.png</normaloff>../recursos/iconos/html.png</iconset>
+   </property>
+   <property name="text">
+    <string>HTML</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/pdf.png</normaloff>../recursos/iconos/pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/ayuda.png</normaloff>../recursos/iconos/ayuda.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Y</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset>
+     <normaloff>../recursos/iconos/abrir-documento.png</normaloff>../recursos/iconos/abrir-documento.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionSalir</sender>
+   <signal>triggered()</signal>
+   <receiver>notas</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
