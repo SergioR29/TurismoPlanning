@@ -10,7 +10,7 @@ Funcionalidades destacadas:
 - **Visualización Geoespacial e Información Climática**: Integración de mapas con ubicación (actual o de una ciudad seleccionada) y datos climáticos en tiempo real.
 - **Consulta de información turística**: Consultar información de sitios que están alrededor de la provincia española de Guadalajara de una forma mucho más sencilla y rápida.
 - **Planificación Personalizada**: Organización de visitas a ciudades/sitios y eventos personales, con agrupación por categorías definidas por el usuario.
-- **Calendario Interactivo**: Vista de eventos agrupados por el día seleccionado del mes en la versión móvil.
+- **Calendario Interactivo**: Vista de eventos agrupados por el día seleccionado del mes en la versión móvil. En la versión de escritorio es interactivo y se puede seleccionar un día para organizar un evento en ese mismo día.
 - **Temas Personalizables**: Opciones de visualización (Claro, Oscuro o Predeterminado por el Sistema) para una experiencia de usuario cómoda. Sólo disponible en la versión móvil.
 
 Hay 2 versiones oficiales para el usuario:  
